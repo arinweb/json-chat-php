@@ -1,7 +1,7 @@
 <?php
 session_start();
 if (!empty($_SESSION["id"])) {
-  header("Location:x.php");
+  header("Location:chat.php");
 }
 
 ?>
