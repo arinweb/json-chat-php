@@ -6,7 +6,9 @@
 session_start();
 date_default_timezone_set('Europe/Istanbul');
 error_reporting(0);
-
+if(!file_exists("chat.json")){
+  touch("chat.json");
+}
 if (empty($_SESSION["id"])) {
   header("Location:exit.php");
   /*
